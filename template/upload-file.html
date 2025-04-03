@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block layout %}
+
+<h2 class="text-center">Upload file</h2>
+<div class="card p-3 m-3">
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+    <input type="file" name="file">
+    <button type="submit">Send</button>
+        </form>
+</div>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+

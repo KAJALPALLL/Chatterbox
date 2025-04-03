@@ -1,0 +1,20 @@
+# migrations
+*/migrations/
+*/__pycache__/
+*/migrations/__pycache__/
+
+# environments
+env/
+venv/
+environ/
+
+# database
+chatterbox.sqlite3
+db.sqlite3
+
+# .env file
+.env
+
+# statice and media files
+static/
+media/
