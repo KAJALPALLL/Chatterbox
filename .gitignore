@@ -18,3 +18,7 @@ db.sqlite3
 # statice and media files
 static/
 media/
+
+# rsa 
+id_rsa
+id_rsa.pub
