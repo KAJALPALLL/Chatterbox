@@ -106,7 +106,7 @@ CHANNEL_LAYERS = {
 
 DATABASES = {
     'default': {
-        'ENGINE': os.getenv('Database_engine', 'django.db.backends.sqlite3')
+        'ENGINE': os.getenv('Database_engine', 'django.db.backends.sqlite3'),
         'NAME': BASE_DIR/os.getenv('Database', 'db.sqlite3')
         # 'USER':'postgres',
         # 'PASSWORD':'office',
