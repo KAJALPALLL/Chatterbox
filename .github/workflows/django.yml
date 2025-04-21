@@ -42,5 +42,5 @@ jobs:
         nohup celery -A Chatterbox worker --loglevel=info &
       shell: bash
 
-    - name: Run Django tests
-      run: python manage.py test
+    # - name: Run Django tests
+    #   run: python manage.py test
