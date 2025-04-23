@@ -5,7 +5,7 @@
 <content class="block w-full">
 
     {% block content %}
-    <form action="{% url 'login' %}" method="post" >
+    <form action="{% url 'sign_up' %}" method="post" >
         {% csrf_token %}
         <input name="username" placeholder="Enter Username">
         <input name="password" placeholder="Enter Password">

@@ -15,7 +15,7 @@ class ChatroomConsumer(WebsocketConsumer):
         # here we get the chatroom_name form scope so firstly get url then from the url arguments which has chatroom_name
 
         self.chatroom_name = self.scope['url_route']['kwargs']['chatroom_name']
-        self.chatroom = get_object_or_404(ChatGroup,group_name=self.chatroom_name)
+        self.chatroom = get_object_or_404(ChatGroup,group_name='test')
 
         # for the groups
         # channel layers are asynchronous but our code is synchronous so we use this code async_to_sync()

@@ -6,7 +6,7 @@ from . forms import *
 
 @login_required
 def chat_view(request):
-    chat_group = get_object_or_404(ChatGroup,group_name="public-chat")
+    chat_group = get_object_or_404(ChatGroup,group_name="test")
 
     # through this code it connect the parent to child ( models )
     chat_messages = chat_group.chatsss.all()[:30]

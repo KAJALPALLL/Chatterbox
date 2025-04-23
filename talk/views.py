@@ -13,3 +13,14 @@ def login(request):
         return redirect('login')
     else:
         return render(request,'blank.html')
+
+
+def sign_up(request):
+    if request.method == "POST":
+        username = request.POST['username']
+        password = request.POST['password']
+        User.objects.create(username=username, password=password)
+        return redirect('login')
+
+    else:
+        return render(request, 'sign-up.html')
